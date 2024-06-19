@@ -1,0 +1,88 @@
+body
+{
+    background-color: #24353f;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1
+{
+    color: #17a2b8;
+}
+.form
+{
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+    
+    padding: 50px;
+   margin: auto;
+   position: relative;
+   top: 100px;
+}
+
+.form_input,.form_button
+{
+    background-color: transparent;
+}
+.form-control:focus
+{
+    background-color: unset;
+    box-shadow: unset;
+    border-color: #80bdff !important;
+}
+.form_button
+{
+    color: #17a2b8;
+}
+.form_text .form_link
+{
+    text-decoration: none;
+    color: white;
+}
+span:hover
+{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.message {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+    
+}
+.welcome h1
+{
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+    width: 50%;
+    padding: 40px;
+    text-align: center;
+}
+.welcome
+{
+    width: 100%;
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+
+}
+h4
+{
+    margin-left: 150px;
+}
+.welcome button
+{
+    margin-right: 150px;
+    background-color: transparent;
+    color: gray;
+}
+
+input[name="name"]::placeholder {
+    color: #999;
+}
+
+input[name="email"]::placeholder {
+    color: #999;
+}
+
+input[name="password"]::placeholder {
+    color: #999; 
+}
+input
+{
+    color: white !important;
+}

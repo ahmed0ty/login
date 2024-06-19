@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/master.css">
+    <link rel="stylesheet" href="./JS/bootstrap.bundle.min.js">
+    <title>Login</title>
+</head>
+<body>
+    
+ 
+
+ <div class="container">
+
+    <!-- Login Form -->
+    <form class="form w-75 d-block" id="login">
+        <h1 class="form_title text-center my-4">Smart Login System</h1>
+        <div class="forminput-group">
+            <input type="text" name="email" class="form_input form-control border border-secondary border-1" placeholder="Enter Your Email">
+        </div>
+        <div class="forminput-group">
+            <input type="password" name="password" class="form_input form-control my-3 border border-secondary border-1" placeholder="Enter Your Password">
+        </div>
+        <button class="form_button form-control btn btn-info" type="submit">Login</button>
+        <p class="form_text text-center text-white my-3" id="linkCreateAccount">
+            Don’t have an account? <span id="signup">Sign Up</span>
+        </p>
+        <div id="fillMessage" class="message text-danger text-center d-none">All inputs are required</div>
+        <div id="succMessage" class="message text-success text-center d-none">Success</div>
+        <div id="exiMessage" class="message text-danger text-center d-none">Incorrect email or password</div>
+    </form>
+
+    <!-- Signup Form -->
+    <form class="form w-75 d-none" id="signupform">
+        <h1 class="form_title text-center my-4">Smart Login System</h1>
+        <div class="forminput-group">
+            <input type="text" name="name" class="form_input form-control border border-secondary border-1" autofocus placeholder="Enter Your Name">
+        </div>
+        <div class="forminput-group">
+            <input type="text" name="email" class="form_input form-control my-3 border border-secondary border-1" autofocus placeholder="Enter Your Email">
+        </div>
+        <div class="forminput-group">
+            <input type="password" name="password" class="form_input form-control my-3 border border-secondary border-1" autofocus placeholder="Enter Your Password">
+        </div>
+        <button class="form_button form-control btn btn-info" type="submit" id="signupbtn">Sign Up</button>
+        <p class="form_text text-center text-white my-3" id="linkCreateAccount">
+            You have an account? <span id="signin">Sign In</span>
+        </p>
+        <div id="fillFieldsMessage" class="message text-danger text-center d-none">All inputs are required</div>
+        <div id="successMessage" class="message text-success text-center d-none">Success</div>
+        <div id="existMessage" class="message text-danger text-center d-none">Email already exists</div>
+    </form>
+
+</div>
+
+     <!-- Welcome Page -->
+
+<div class="div2 d-none" id="welcomepage">
+    <div class="welcome p-3 d-flex justify-content-between align-items-center">
+        <h4 class="text-white">SMART LOGIN</h4>
+        <button class="btn btn-info" id="welcomebtn">Logout</button>
+    </div>
+    <div class="position-absolute top-50 start-50 translate-middle" >
+        <h1 id="welcomeMessage"></h1>
+    </div>
+</div>
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+    <script src="./JS/master.js"></script>
+</body>
+</html>
